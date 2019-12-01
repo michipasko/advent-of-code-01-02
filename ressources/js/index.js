@@ -117,9 +117,7 @@ let fuelRequiredForFuelTotal = 0
 const calculateFuelRequiredTotal = (modules) => {
     let fuelRequiredTotal = null
     for (oneModule of modules) {
-        /* let fuelRequiredModule = null
-        fuelRequiredModule =  Math.floor(parseInt(massModule) / 3) - 2
-        console.log("Fuel Module:", fuelRequiredModule) */
+
         let fuelForModule = calculateFuelForModule(oneModule)
         fuelRequiredTotal += fuelForModule
         
